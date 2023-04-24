@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#FF018786">
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="239dp"
+        android:text="Car Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="23dp"
+        android:text="Car History"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addcar" />
+
+    <Button
+        android:id="@+id/btn_addcar"
+        android:layout_width="212dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="28dp"
+        android:text="Add Cars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_map" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

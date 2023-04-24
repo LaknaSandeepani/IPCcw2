@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491967830403",
+    "project_id": "ipccw2-e8950",
+    "storage_bucket": "ipccw2-e8950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491967830403:android:6227cd2ea0d68769f03eb6",
+        "android_client_info": {
+          "package_name": "lk.com.ipccw2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491967830403-akv5h1a0pknhfm2hgirj3hdqc3rpu06l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvopTs4FsyMgz0nBKBhG__383VxQ6oACg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491967830403-akv5h1a0pknhfm2hgirj3hdqc3rpu06l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
