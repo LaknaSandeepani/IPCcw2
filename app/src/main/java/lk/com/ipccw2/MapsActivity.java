@@ -73,11 +73,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        LatLng location1 = new LatLng(6.9271, 79.8612);
 //        mMap.addMarker(new MarkerOptions().position(location1).title("Location 1").icon(carIcon));
 //
-//        LatLng location2 = new LatLng(6.9053, 79.9728);
-//        mMap.addMarker(new MarkerOptions().position(location2).title("Location 2").icon(carIcon));
+        LatLng location1 = new LatLng(7.00142, 79.9498);
+        mMap.addMarker(new MarkerOptions().position(location1).icon(carIcon));
 
-        LatLng location1 = new LatLng(6.8998, 79.8626);
-        mMap.addMarker(new MarkerOptions().position(location1).title("F1-003").icon(carIcon));
+
+//        LatLng location1 = new LatLng(70.90, 79.95);
+//        mMap.addMarker(new MarkerOptions().position(location1).title("F1-003").icon(carIcon));
 
         // Define the polygon options
 //        PolygonOptions polygonOptions = new PolygonOptions()

@@ -28,6 +28,44 @@
             android:textAppearance="?attr/textAppearanceHeadline6" />
 
         <TextView
+            android:id="@+id/txt_accx"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <TextView
+            android:id="@+id/txt_accy"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <TextView
+            android:id="@+id/txt_accz"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+        <TextView
+            android:id="@+id/txt_rotationx"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+        <TextView
+            android:id="@+id/txt_rotationy"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+        <TextView
+            android:id="@+id/txt_rotationz"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+        <TextView
             android:id="@+id/txt_date"
             android:textSize="15sp"
             android:layout_width="match_parent"

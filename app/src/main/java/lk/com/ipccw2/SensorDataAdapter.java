@@ -46,6 +46,12 @@ public class SensorDataAdapter extends RecyclerView.Adapter<SensorDataAdapter.Se
 
         private TextView textViewSensorId;
         private TextView textViewSpeed;
+        private TextView textViewaccx;
+        private TextView textViewaccy;
+        private TextView textViewaccz;
+        private TextView textViewrotx;
+        private TextView textViewroty;
+        private TextView textViewrotz;
         private TextView textViewDate;
         private TextView textViewTime;
 
@@ -53,6 +59,12 @@ public class SensorDataAdapter extends RecyclerView.Adapter<SensorDataAdapter.Se
             super(itemView);
             textViewSensorId = itemView.findViewById(R.id.txt_sensorid);
             textViewSpeed = itemView.findViewById(R.id.txt_speed);
+            textViewaccx = itemView.findViewById(R.id.txt_accx);
+            textViewaccy = itemView.findViewById(R.id.txt_accy);
+            textViewaccz = itemView.findViewById(R.id.txt_accz);
+            textViewrotx = itemView.findViewById(R.id.txt_rotationx);
+            textViewroty = itemView.findViewById(R.id.txt_rotationy);
+            textViewrotz = itemView.findViewById(R.id.txt_rotationz);
             textViewDate = itemView.findViewById(R.id.txt_date);
             textViewTime = itemView.findViewById(R.id.txt_time);
         }
@@ -60,6 +72,12 @@ public class SensorDataAdapter extends RecyclerView.Adapter<SensorDataAdapter.Se
         public void bind(SensorData sensorData) {
             textViewSensorId.setText("Car Number: " + sensorData.getSensorId());
             textViewSpeed.setText("Speed (m/s):" + sensorData.getSpeed());
+            textViewaccx.setText("Accelaration(x-axis):"+ sensorData.getAccelerationx());
+            textViewaccy.setText("Accelaration(y-axis):"+ sensorData.getAccelerationy());
+            textViewaccz.setText("Accelaration(z-axis):"+ sensorData.getAccelerationz());
+            textViewrotx.setText("Rotation(x-axis):"+sensorData.getRotationx());
+            textViewroty.setText("Rotation(y-axis):"+sensorData.getRotationy());
+            textViewrotz.setText("Rotation(z-axis):"+sensorData.getRotationz());
             if(sensorData.getCreatedAt() != null) {
                 Date date = new Date(sensorData.getCreatedAt().toDate().getTime());
 

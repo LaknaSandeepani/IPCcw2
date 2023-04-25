@@ -62,9 +62,15 @@ public class SensorActivity extends AppCompatActivity {
                     if (doc.exists()) {
                         String sensorId = doc.getString("car_ID");
                         String speed = doc.getString("Speed");
+                        String accelerationx = doc.getString("acceleration_X");
+                        String accelerationy = doc.getString("acceleration_Y");
+                        String accelerationz = doc.getString("acceleration_Z");
+                        String rotationx = doc.getString("rotation_X");
+                        String rotationy = doc.getString("rotation_Y");
+                        String rotationz = doc.getString("rotation_Z");
                         Timestamp createdAt = doc.getTimestamp("createdAt");
 
-                        SensorData sensorData = new SensorData(sensorId, speed, createdAt);
+                        SensorData sensorData = new SensorData(sensorId, speed, accelerationx,accelerationy,accelerationz, rotationx, rotationy,rotationz, createdAt);
                         sensorDataList.add(sensorData);
                     }
                 }
@@ -80,6 +86,12 @@ public class SensorActivity extends AppCompatActivity {
 
         private TextView textViewSensorId;
         private TextView textViewSpeed;
+        private TextView textViewaccx;
+        private TextView textViewaccy;
+        private TextView textViewaccz;
+        private TextView textViewrotx;
+        private TextView textViewroty;
+        private TextView textViewrotz;
         private TextView textViewDate;
         private TextView textViewTime;
 
@@ -87,6 +99,12 @@ public class SensorActivity extends AppCompatActivity {
             super(itemView);
             textViewSensorId = itemView.findViewById(R.id.txt_sensorid);
             textViewSpeed = itemView.findViewById(R.id.txt_speed);
+            textViewaccx = itemView.findViewById(R.id.txt_accx);
+            textViewaccy = itemView.findViewById(R.id.txt_accy);
+            textViewaccz = itemView.findViewById(R.id.txt_accz);
+            textViewrotx = itemView.findViewById(R.id.txt_rotationx);
+            textViewroty = itemView.findViewById(R.id.txt_rotationy);
+            textViewrotz = itemView.findViewById(R.id.txt_rotationz);
             textViewDate = itemView.findViewById(R.id.txt_date);
             textViewTime = itemView.findViewById(R.id.txt_time);
         }
@@ -94,7 +112,12 @@ public class SensorActivity extends AppCompatActivity {
         public void bind(SensorData sensorData) {
             textViewSensorId.setText("Car Number: " + sensorData.getSensorId());
             textViewSpeed.setText("Speed (m/s):" + sensorData.getSpeed());
-
+            textViewaccx.setText("Accelaration(x-axis):"+ sensorData.getAccelerationx());
+            textViewaccy.setText("Accelaration(y-axis):"+ sensorData.getAccelerationy());
+            textViewaccz.setText("Accelaration(z-axis):"+ sensorData.getAccelerationz());
+            textViewrotx.setText("Rotation(x-axis):"+sensorData.getRotationx());
+            textViewroty.setText("Rotation(y-axis):"+sensorData.getRotationy());
+            textViewrotz.setText("Rotation(z-axis):"+sensorData.getRotationz());
             Timestamp createdAt = sensorData.getCreatedAt();
             Date date = createdAt.toDate();
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
